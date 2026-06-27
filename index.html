@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Naayaab-e-Kala – Where Creativity Becomes Timeless Art. A premium art studio offering classes, workshops, canvas painting, portrait commissions and more." />
+  <meta name="keywords" content="art studio, painting classes, workshops, portrait, canvas, sketching, Indian art, Naayaab-e-Kala" />
+  <title>Naayaab-e-Kala | Where Creativity Becomes Timeless Art</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-mode" data-theme="light">
+
+  <!-- Loading Screen -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-brush"></div>
+      <p class="loader-text">Creating Beauty...</p>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor" class="custom-cursor"></div>
+  <div id="cursor-trail" class="cursor-trail"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Naayaab-e-Kala Home">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">Naayaab-e-Kala</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#artists">Artists</a></li>
+        <li><a href="#workshops">Workshops</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <span class="toggle-icon" id="themeIcon">☽</span>
+        </button>
+        <a href="#workshops" class="btn-book-nav">Book Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="floating-elements" aria-hidden="true">
+      <span class="float-el el-1">✦</span>
+      <span class="float-el el-2">◈</span>
+      <span class="float-el el-3">❖</span>
+      <span class="float-el el-4">✦</span>
+      <span class="float-el el-5">◇</span>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow fade-up">Traditional Art · Modern Soul</p>
+      <h1 class="hero-title fade-up">Welcome to<br /><em>Naayaab-e-Kala</em></h1>
+      <p class="hero-sub fade-up">A space where imagination transforms into extraordinary artwork.</p>
+      <div class="hero-btns fade-up">
+        <a href="#gallery" class="btn-primary">Explore Gallery</a>
+        <a href="#workshops" class="btn-outline">Book a Workshop</a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll to explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section-pad">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-art reveal-left">
+          <div class="about-illustration">
+            <div class="art-circle c1"></div>
+            <div class="art-circle c2"></div>
+            <div class="art-circle c3"></div>
+            <div class="art-brush-strokes" aria-hidden="true">
+              <svg viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40 350 Q100 200 150 100 Q200 20 260 50" stroke="#B8860B" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.6"/>
+                <path d="M20 300 Q80 180 160 150 Q220 120 280 180" stroke="#A1045A" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.5"/>
+                <path d="M60 380 Q90 260 130 200 Q180 130 240 160" stroke="#D4A017" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+                <circle cx="150" cy="190" r="60" fill="#B8860B" opacity="0.08"/>
+                <circle cx="150" cy="190" r="40" fill="#A1045A" opacity="0.08"/>
+                <text x="110" y="200" font-size="60" fill="#B8860B" opacity="0.2">✦</text>
+              </svg>
+            </div>
+            <div class="about-badge">
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <p class="section-eyebrow">Our Story</p>
+          <h2 class="section-title">Crafting Art with<br/><em>Heart and Soul</em></h2>
+          <p class="about-body">Naayaab-e-Kala was born from a single belief — that art is not a skill reserved for the gifted, but a language waiting inside every soul. Founded in the heart of Delhi, our studio blends the timeless richness of Indian artistic traditions with the clarity of contemporary expression.</p>
+          <p class="about-body">Every brushstroke here carries intention. Every class is a doorway. Whether you are a curious beginner or an experienced artist, you will find your voice in our warm, inspiring space.</p>
+          <div class="about-pillars">
+            <div class="pillar">
+              <span class="pillar-icon">🎨</span>
+              <div>
+                <strong>Our Vision</strong>
+                <p>To make art a living, breathing part of everyday life.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon">✦</span>
+              <div>
+                <strong>Our Mission</strong>
+                <p>Nurturing creativity with guidance, joy, and cultural pride.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services section-pad alt-bg">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-eyebrow">What We Offer</p>
+        <h2 class="section-title">Our <em>Services</em></h2>
+        <p class="section-desc">From first brushstrokes to commissioned masterpieces — we offer something for every creative soul.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal-up" tabindex="0">
+          <div class="service-icon">🖌️</div>
+          <h3>Art Classes</h3>
+          <p>Structured weekly classes for all levels, guided by experienced instructors who nurture your unique voice.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card reveal-up" tabindex="0">
+          <div class="service-icon">🎨</div>
+          <h3>Canvas Painting</h3>
+          <p>Explore acrylics, oils, and watercolors on large canvases in a serene, studio-grade environment.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card reveal-up" tabindex="0">
+          <div class="service-icon">✏️</div>
+          <h3>Sketching & Drawing</h3>
+          <p>Master form, shading, and perspective through dedicated sketching modules and life drawing sessions.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card reveal-up" tabindex="0">
+          <div class="service-icon">👤</div>
+          <h3>Portrait Commissions</h3>
+          <p>Bespoke hand-crafted portraits from photographs — perfect gifts and heirloom keepsakes.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card reveal-up" tabindex="0">
+          <div class="service-icon">🏛️</div>
+          <h3>Workshops</h3>
+          <p>Intensive weekend and holiday workshops covering themed art techniques with a celebratory finish.</p>
+          <a href="#workshops" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card reveal-up" tabindex="0">
+          <div class="service-icon">🧒</div>
+          <h3>Kids Art Programs</h3>
+          <p>Age-appropriate creative programs that build confidence, focus, and joy through colour and form.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card reveal-up" tabindex="0">
+          <div class="service-icon">🖼️</div>
+          <h3>Custom Artwork</h3>
+          <p>Commissioned paintings for your home, office, or as personal gifts — crafted with care and precision.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card reveal-up" tabindex="0">
+          <div class="service-icon">🏢</div>
+          <h3>Corporate Art Sessions</h3>
+          <p>Creative team-building experiences that refresh, inspire, and bring your workplace to life.</p>
+          <a href="#contact" class="service-link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery section-pad">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-eyebrow">Featured Works</p>
+        <h2 class="section-title">Art <em>Gallery</em></h2>
+        <p class="section-desc">A curated selection of works created at Naayaab-e-Kala — each one a story told in colour.</p>
+      </div>
+      <div class="gallery-filters reveal-up" role="tablist" aria-label="Gallery filter">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="paintings" role="tab" aria-selected="false">Paintings</button>
+        <button class="filter-btn" data-filter="sketches" role="tab" aria-selected="false">Sketches</button>
+        <button class="filter-btn" data-filter="portraits" role="tab" aria-selected="false">Portraits</button>
+        <button class="filter-btn" data-filter="abstract" role="tab" aria-selected="false">Abstract</button>
+        <button class="filter-btn" data-filter="workshops" role="tab" aria-selected="false">Workshops</button>
+      </div>
+      <div class="gallery-masonry" id="galleryGrid">
+        <div class="gallery-item reveal-up" data-category="paintings" tabindex="0" role="button" aria-label="View: Monsoon Melody painting" data-title="Monsoon Melody" data-artist="Priya Sharma">
+          <div class="gallery-img g-tall" style="background: linear-gradient(135deg,#B8860B 0%,#A1045A 60%,#4A3526 100%)">
+            <div class="gallery-overlay"><span class="gallery-cat">Painting</span><span class="gallery-zoom">⊕</span></div>
+          </div>
+          <div class="gallery-caption"><h4>Monsoon Melody</h4><p>Priya Sharma</p></div>
+        </div>
+        <div class="gallery-item reveal-up" data-category="abstract" tabindex="0" role="button" aria-label="View: Soul Fire abstract" data-title="Soul Fire" data-artist="Arjun Mehta">
+          <div class="gallery-img" style="background: linear-gradient(120deg,#A1045A 0%,#D4A017 100%)">
+            <div class="gallery-overlay"><span class="gallery-cat">Abstract</span><span class="gallery-zoom">⊕</span></div>
+          </div>
+          <div class="gallery-caption"><h4>Soul Fire</h4><p>Arjun Mehta</p></div>
+        </div>
+        <div class="gallery-item reveal-up" data-category="portraits" tabindex="0" role="button" aria-label="View: The Weaver portrait" data-title="The Weaver" data-artist="Kavya Iyer">
+          <div class="gallery-img g-tall" style="background: linear-gradient(150deg,#4A3526 0%,#B8860B 50%,#D4A017 100%)">
+            <div class="gallery-overlay"><span class="gallery-cat">Portrait</span><span class="gallery-zoom">⊕</span></div>
+          </div>
+          <div class="gallery-caption"><h4>The Weaver</h4><p>Kavya Iyer</p></div>
+        </div>
+        <div class="gallery-item reveal-up" data-category="sketches" tabindex="0" role="button" aria-label="View: Chai Corner sketch" data-title="Chai Corner" data-artist="Rohan Das">
+          <div class="gallery-img" style="background: linear-gradient(180deg,#F8F1E7 0%,#4A3526 100%)">
+            <div class="gallery-overlay"><span class="gallery-cat">Sketch</span><span class="gallery-zoom">⊕</span></div>
+          </div>
+          <div class="gallery-caption"><h4>Chai Corner</h4><p>Rohan Das</p></div>
+        </div>
+        <div class="gallery-item reveal-up" data-category="workshops" tabindex="0" role="button" aria-label="View: Workshop Bloom artwork" data-title="Workshop Bloom" data-artist="Studio Collective">
+          <div class="gallery-img g-wide" style="background: linear-gradient(90deg,#D4A017 0%,#A1045A 50%,#B8860B 100%)">
+            <div class="gallery-overlay"><span class="gallery-cat">Workshop</span><span class="gallery-zoom">⊕</span></div>
+          </div>
+          <div class="gallery-caption"><h4>Workshop Bloom</h4><p>Studio Collective</p></div>
+        </div>
+        <div class="gallery-item reveal-up" data-category="paintings" tabindex="0" role="button" aria-label="View: Golden Ganges painting" data-title="Golden Ganges" data-artist="Priya Sharma">
+          <div class="gallery-img" style="background: linear-gradient(200deg,#D4A017,#B8860B,#A1045A)">
+            <div class="gallery-overlay"><span class="gallery-cat">Painting</span><span class="gallery-zoom">⊕</span></div>
+          </div>
+          <div class="gallery-caption"><h4>Golden Ganges</h4><p>Priya Sharma</p></div>
+        </div>
+        <div class="gallery-item reveal-up" data-category="abstract" tabindex="0" role="button" aria-label="View: Raga in Blue abstract" data-title="Raga in Blue" data-artist="Arjun Mehta">
+          <div class="gallery-img g-tall" style="background: linear-gradient(160deg,#1a1a2e 0%,#A1045A 70%,#D4A017 100%)">
+            <div class="gallery-overlay"><span class="gallery-cat">Abstract</span><span class="gallery-zoom">⊕</span></div>
+          </div>
+          <div class="gallery-caption"><h4>Raga in Blue</h4><p>Arjun Mehta</p></div>
+        </div>
+        <div class="gallery-item reveal-up" data-category="portraits" tabindex="0" role="button" aria-label="View: Grandmother's Eyes portrait" data-title="Grandmother's Eyes" data-artist="Kavya Iyer">
+          <div class="gallery-img" style="background: linear-gradient(130deg,#4A3526 0%,#D4A017 100%)">
+            <div class="gallery-overlay"><span class="gallery-cat">Portrait</span><span class="gallery-zoom">⊕</span></div>
+          </div>
+          <div class="gallery-caption"><h4>Grandmother's Eyes</h4><p>Kavya Iyer</p></div>
+        </div>
+        <div class="gallery-item reveal-up" data-category="sketches" tabindex="0" role="button" aria-label="View: Old Delhi Lanes sketch" data-title="Old Delhi Lanes" data-artist="Rohan Das">
+          <div class="gallery-img" style="background: linear-gradient(170deg,#F8F1E7 0%,#B8860B 60%,#4A3526 100%)">
+            <div class="gallery-overlay"><span class="gallery-cat">Sketch</span><span class="gallery-zoom">⊕</span></div>
+          </div>
+          <div class="gallery-caption"><h4>Old Delhi Lanes</h4><p>Rohan Das</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Artwork detail" hidden>
+    <div class="lightbox-overlay" id="lightboxOverlay"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">✕</button>
+      <div class="lightbox-art" id="lightboxArt"></div>
+      <div class="lightbox-info">
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxArtist"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Artists Section -->
+  <section id="artists" class="artists section-pad alt-bg">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-eyebrow">Meet the Creators</p>
+        <h2 class="section-title">Our <em>Artists</em></h2>
+      </div>
+      <div class="artists-grid">
+        <div class="artist-card reveal-up">
+          <div class="artist-photo a1"></div>
+          <div class="artist-info">
+            <h3>Vikrant Sandhu</h3>
+            <p class="artist-spec">Canvas Painting · Watercolours</p>
+            <p class="artist-bio">Information.</p>
+            <div class="artist-socials">
+              <a href="https://www.instagram.com/sandhu.vikrant231?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram">📸</a>
+              <a href="https://www.facebook.com/your_facebook_username/" target="_blank" aria-label="Facebook">🌐</a>
+              <a href="https://www.pinterest.com/your_pinterest_username/" target="_blank" aria-label="Pinterest">📌</a>
+            </div>
+          </div>
+        </div>
+        <div class="artist-card reveal-up">
+          <div class="artist-photo a2"></div>
+          <div class="artist-info">
+            <h3>Kavneet Kaur</h3>
+            <p class="artist-spec">Abstract · Mixed Media</p>
+            <p class="artist-bio">Information.</p>
+            <div class="artist-socials">
+              <a href="#" aria-label="Arjun on Instagram">📸</a>
+              <a href="#" aria-label="Arjun on Facebook">🌐</a>
+              <a href="#" aria-label="Arjun on Twitter">🐦</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Workshops already done -->
+  <section id="done" class="done section-pad alt-bg">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-eyebrow"></p>
+        <h2 class="section-title">Our <em>Workshops</em></h2>
+      </div>
+      <div class="done-grid">
+        <div class="done-card reveal-up">
+          <div class="done-photo a1"></div>
+          <div class="done-info">
+            <h3>Our first Workshop</h3>
+            <p class="done-spec"></p>
+            <p class="done-bio"></p>
+          </div>
+        </div>
+        <div class="done-card reveal-up">
+          <div class="done-photo a2"></div>
+          <div class="done-info">
+            <h3></h3>
+            <p class="done-spec"></p>
+            <p class="done-bio"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Workshops & Events -->
+  <section id="workshops" class="workshops section-pad">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-eyebrow">Join Us</p>
+        <h2 class="section-title">Workshops &amp; <em>Events</em></h2>
+        <p class="section-desc">Hands-on experiences designed to spark creativity, sharpen skills, and build community.</p>
+      </div>
+      <div class="workshops-grid">
+        <div class="workshop-card reveal-up">
+          <div class="wk-badge">Upcoming</div>
+          <div class="wk-date-block">
+            <span class="wk-day">12</span>
+            <span class="wk-month">Jul 2025</span>
+          </div>
+          <h3>Monsoon Watercolour Retreat</h3>
+          <p>Capture the romance of the rains through expressive watercolour techniques.</p>
+          <ul class="wk-meta">
+            <li>⏰ 10:00 AM – 4:00 PM</li>
+            <li>📍 Studio A, Naayaab-e-Kala</li>
+            <li>💰 ₹1,800 per person</li>
+          </ul>
+          <button class="btn-register" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfxNX7DVTY6uWur4kmeu0KaH-J1qWtdm9Hy-eU8WpBkfrPXEw/viewform?usp=dialog', 'blank')">Register Now</button>
+        </div>
+        <div class="workshop-card reveal-up">
+          <div class="wk-badge">Selling Fast</div>
+          <div class="wk-date-block">
+            <span class="wk-day">19</span>
+            <span class="wk-month">Jul 2025</span>
+          </div>
+          <h3>Portrait Intensive Weekend</h3>
+          <p>Two days deep in the art of likeness — charcoal, graphite, and oil colour portraits.</p>
+          <ul class="wk-meta">
+            <li>⏰ 9:00 AM – 5:00 PM (Sat–Sun)</li>
+            <li>📍 Studio B, Naayaab-e-Kala</li>
+            <li>💰 ₹3,500 for both days</li>
+          </ul>
+          <button class="btn-register" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfxNX7DVTY6uWur4kmeu0KaH-J1qWtdm9Hy-eU8WpBkfrPXEw/viewform?usp=dialog', 'blank')">Register Now</button>
+        </div>
+        <div class="workshop-card reveal-up">
+          <div class="wk-badge">Kids Special</div>
+          <div class="wk-date-block">
+            <span class="wk-day">26</span>
+            <span class="wk-month">Jul 2025</span>
+          </div>
+          <h3>Little Artists Summer Camp</h3>
+          <p>A week of joyful art-making for children aged 6–14. Painting, clay, craft and more!</p>
+          <ul class="wk-meta">
+            <li>⏰ 11:00 AM – 2:00 PM (Mon–Fri)</li>
+            <li>📍 Kids Studio, Naayaab-e-Kala</li>
+            <li>💰 ₹4,000 for the week</li>
+          </ul>
+          <button class="btn-register" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfxNX7DVTY6uWur4kmeu0KaH-J1qWtdm9Hy-eU8WpBkfrPXEw/viewform?usp=dialog', 'blank')">Register Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Modal -->
+  <div id="bookingModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close booking form">✕</button>
+      <h2 id="modalTitle">Book Your Spot</h2>
+      <div id="bookingDetails" class="booking-details"></div>
+      <form id="bookingForm" class="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bName">Full Name *</label>
+            <input type="text" id="bName" name="bName" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="bEmail">Email Address *</label>
+            <input type="email" id="bEmail" name="bEmail" placeholder="you@email.com" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bPhone">Phone Number *</label>
+            <input type="tel" id="bPhone" name="bPhone" placeholder="+91 98765 43210" required />
+          </div>
+          <div class="form-group">
+            <label for="bParticipants">No. of Participants</label>
+            <select id="bParticipants" name="bParticipants">
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="bNotes">Special Notes</label>
+          <textarea id="bNotes" name="bNotes" rows="3" placeholder="Any dietary needs, accessibility requirements, or questions…"></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full">Confirm Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Why Choose Us (Stats inline already above, this has qualitative) -->
+  <section class="why-us section-pad alt-bg">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-eyebrow">Why Naayaab-e-Kala</p>
+        <h2 class="section-title">The <em>Naayaab</em> Difference</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal-up">
+          <div class="why-icon">🌸</div>
+          <h3>Cultural Roots</h3>
+          <p>Our curriculum is deeply rooted in Indian artistic heritage — Madhubani, Warli, miniature painting — taught alongside global techniques.</p>
+        </div>
+        <div class="why-card reveal-up">
+          <div class="why-icon">✨</div>
+          <h3>Expert Guidance</h3>
+          <p>Every instructor at Naayaab-e-Kala is a practising, exhibiting artist who brings real-world passion into the classroom.</p>
+        </div>
+        <div class="why-card reveal-up">
+          <div class="why-icon">🤝</div>
+          <h3>Warm Community</h3>
+          <p>Art is more joyful together. Our studio is a welcoming community where students support, inspire, and grow alongside each other.</p>
+        </div>
+        <div class="why-card reveal-up">
+          <div class="why-icon">🏆</div>
+          <h3>Premium Materials</h3>
+          <p>We provide professional-grade supplies in all classes — because the right tools unlock the best art.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section-pad">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-eyebrow">Get in Touch</p>
+        <h2 class="section-title">We'd Love to <em>Hear from You</em></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-detail">
+            <span class="cd-icon">📍</span>
+            <div>
+              <strong>Studio Address</strong>
+              <p>SCO 1068, 204, Sector 70, Sahibzada Ajit Singh Nagar, Punjab 160071</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-icon">📞</span>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:+91 7814837802">+91 78148 37802</a></p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-icon">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:nayaabekala111@gmail.com">nayaabekala111@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-icon">🕐</span>
+            <div>
+              <strong>Studio Hours</strong>
+              <p>Mon–Sat: 11:00 AM – 8:30 PM<br/>Sunday: 11:00 AM – 8:30 PM</p>
+            </div>
+          </div>
+          <!-- Google Maps Embed -->
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4372.508314742591!2d76.70882437448168!3d30.69832296742408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fefad7a8e9317%3A0x8f788d6f64bab2d0!2sNaayaab%20e%20kala!5e0!3m2!1sen!2sin!4v1782391273034!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+              width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Naayaab-e-Kala Location Map"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="nav-logo">
+              <span class="logo-icon">✦</span>
+              <span class="logo-text">Naayaab-e-Kala</span>
+            </a>
+            <p class="footer-tagline">Where Creativity Becomes Timeless Art</p>
+            <div class="footer-socials">
+              <a href="#" aria-label="Instagram">📸</a>
+              <a href="#" aria-label="Facebook">🌐</a>
+              <a href="#" aria-label="Pinterest">📌</a>
+              <a href="#" aria-label="YouTube">▶️</a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#workshops">Workshops</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Art Classes</a></li>
+              <li><a href="#services">Canvas Painting</a></li>
+              <li><a href="#services">Portrait Commissions</a></li>
+              <li><a href="#services">Kids Programs</a></li>
+              <li><a href="#services">Corporate Sessions</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Stay Inspired</h4>
+            <p>Subscribe to our newsletter for workshop announcements, art tips, and studio updates.</p>
+            <form class="newsletter-form" id="newsletterForm" novalidate>
+              <input type="email" placeholder="Your email address" required aria-label="Email for newsletter" />
+              <button type="submit" aria-label="Subscribe">→</button>
+            </form>
+            <div id="newsletterSuccess" class="form-success" hidden>✦ You're subscribed!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 Naayaab-e-Kala. Crafted with love in New Delhi. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
