@@ -308,8 +308,9 @@ function openLightbox(item) {
   const title = item.getAttribute('data-title');
   const artist = item.getAttribute('data-artist');
   if (lightboxArt && imgEl) {
-    lightboxArt.style.background = window.getComputedStyle(imgEl).background;
-  }
+  lightboxArt.src = imgEl.src;
+  lightboxArt.alt = imgEl.alt;
+}
   if (lightboxTitle) lightboxTitle.textContent = title;
   if (lightboxArtist) lightboxArtist.textContent = 'by ' + artist;
   if (lightbox) {
@@ -627,3 +628,6 @@ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   });
   clearInterval(autoSlide);
 }
+
+
+
