@@ -524,7 +524,7 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 /* ---------- MICRO-INTERACTION: CARD TILT ---------- */
-document.querySelectorAll('.service-card, .workshop-card, .artist-card').forEach(card => {
+document.querySelectorAll('.service-card, .workshop-card, .artist-card, .done-card').forEach(card => {
   card.addEventListener('mousemove', (e) => {
     const rect = card.getBoundingClientRect();
     const x = (e.clientX - rect.left) / rect.width - 0.5;
