@@ -800,7 +800,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* Vikrant */
 .artist-photo.a1{
-    background-image: url("bro.jpg");
+    background-image: url("images/bro.jpg");
 }
 
 /* Kavneet */
@@ -841,6 +841,79 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: inline-block;
 }
 .artist-socials a:hover { transform: scale(1.25); }
+
+
+/* ---------- Workshops done ---------- */
+.done-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.done-card {
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.done-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.done-photo{
+    height: 250px;
+    border-radius: 20px 20px 0 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* workshops */
+.done-photo.a1{
+    background-image: url("images/workshop1.jpeg");
+}
+
+/* workshops */
+.done-photo.a2{
+    background-image: url("images/workshop2.jpeg");
+}
+.done-info {
+  padding: 24px;
+}
+.done-info h3 {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--brown);
+  margin-bottom: 4px;
+}
+[data-theme="dark"] .done-info h3 { color: var(--cream); }
+.done-spec {
+  font-size: 0.78rem;
+  color: var(--mustard);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+  display: block;
+}
+.done-bio {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+.done-socials {
+  display: flex;
+  gap: 12px;
+}
+.done-socials a {
+  font-size: 1.1rem;
+  transition: transform var(--transition);
+  display: inline-block;
+}
+.done-socials a:hover { transform: scale(1.25); }
+
 
 /* ---------- WORKSHOPS ---------- */
 .workshops-grid {
@@ -1421,79 +1494,3 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 ::-webkit-scrollbar-track { background: var(--cream); }
 ::-webkit-scrollbar-thumb { background: var(--mustard); border-radius: 3px; }
 
-
-
-
-
-
-/* ---------- Workshops done ---------- */
-.done-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
-
-.done-card {
-  background: var(--card-bg);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  border: 1px solid var(--border);
-  transition: transform var(--transition), box-shadow var(--transition);
-}
-.done-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-hover);
-}
-
-.done-photo{
-    height: 250px;
-    width: auto;
-    border-radius: 20px 20px 0 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* worshops */
-.done-photo.a1{
-    background-image: url("workshop1.jpeg");
-}
-
-/* workshops */
-.done-photo.a2{
-    background-image: url("workshop2.jpeg");
-}
-.done-info {
-  padding: 24px;
-}
-.done-info h3 {
-  font-family: var(--font-serif);
-  font-size: 1.1rem;
-  color: var(--brown);
-  margin-bottom: 4px;
-}
-[data-theme="dark"] .done-info h3 { color: var(--cream); }
-.done-spec {
-  font-size: 0.78rem;
-  color: var(--mustard);
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  margin-bottom: 10px;
-  display: block;
-}
-.done-bio {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  line-height: 1.6;
-  margin-bottom: 16px;
-}
-.done-socials {
-  display: flex;
-  gap: 12px;
-}
-.done-socials a {
-  font-size: 1.1rem;
-  transition: transform var(--transition);
-  display: inline-block;
-}
-.done-socials a:hover { transform: scale(1.25); }
